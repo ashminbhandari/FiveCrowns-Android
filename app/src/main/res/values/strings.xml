@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FiveCrowns</string>
+    <string name="load_game_text">Load Game</string>
+    <string name="start_game_text">Start Game</string>
+    <string name="exit_game_text">Exit Game</string>
+    <string name="player_1_text">Player 1</string>
+    <string name="player_2_text">Player 2</string>
+    <string name="discard_pile_text">Discard Pile</string>
+    <string name="draw_pile_text">Draw Pile</string>
+    <string name="pick_card_text">Pick Card</string>
+    <string name="drop_card_text">Drop Card</string>
+    <string name="take_turn_text">Take Turn</string>
+    <string name="help_text">Help</string>
+</resources>

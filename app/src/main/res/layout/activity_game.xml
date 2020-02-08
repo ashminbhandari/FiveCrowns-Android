@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="notSelected">
+
+        <TextView
+            android:id="@+id/roundInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Round " />
+
+        <TextView
+            android:id="@+id/player1Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/player_1_text" />
+
+        <HorizontalScrollView
+            android:id="@+id/player1ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="127dp">
+
+            <LinearLayout
+                android:id="@+id/player1Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/player2Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/player_2_text" />
+
+        <HorizontalScrollView
+            android:id="@+id/player2ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="111dp">
+
+            <LinearLayout
+                android:id="@+id/player2Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/discardPileScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discard_pile_text" />
+
+        <HorizontalScrollView
+            android:id="@+id/discardPileScorllView"
+            android:layout_width="426dp"
+            android:layout_height="110dp">
+
+            <LinearLayout
+                android:id="@+id/discardPileLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/drawPileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_pile_text" />
+
+        <ImageView
+            android:id="@+id/drawPileImage"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/deck" />
+
+        <TextView
+            android:id="@+id/pickCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_card_text" />
+
+        <ImageView
+            android:id="@+id/pickCardImage"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+        <TextView
+            android:id="@+id/dropCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drop_card_text" />
+
+        <ImageView
+            android:id="@+id/dropCardImage"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/takeTurnButton"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="takeTurnButtonClick"
+                android:text="@string/take_turn_text" />
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="helpButtonClick"
+                android:text="@string/help_text" />
+
+            <Button
+                android:id="@+id/goOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goOutButtonClick"
+                android:text="Go Out" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
